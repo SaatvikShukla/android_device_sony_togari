@@ -33,7 +33,7 @@
     "remote":      "github",
     "repository":  "AOSPA-L/android_device_sony_msm8974-common",
     "target_path": "device/sony/msm8974-common",
-    "revision":    "cm-12.1"
+    "revision":    "lollipop-mr1"
   },
   {
     "remote":      "github",
