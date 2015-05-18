@@ -25,12 +25,6 @@
   },
   {
     "remote":      "github",
-    "repository":  "CyanogenMod/android_device_sony_qcom-common",
-    "target_path": "device/sony/qcom-common",
-    "revision":    "cm-12.1"
-  },
-  {
-    "remote":      "github",
     "repository":  "CyanogenMod/android_device_sony_common",
     "target_path": "device/sony/common",
     "revision":    "cm-12.1"
