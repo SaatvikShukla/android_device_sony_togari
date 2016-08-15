@@ -26,10 +26,19 @@ TARGET_SPECIFIC_HEADER_PATH += device/sony/togari/include
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/sony/togari/bluetooth
 
 # Kernel properties
-TARGET_KERNEL_CONFIG := cm_rhine_togari_defconfig
+TARGET_KERNEL_CONFIG := cm_rhine_togari_row_defconfig
+TARGET_KERNEL_SOURCE := kernel/sony/msm8974
+
+# Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9-uber/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 4.9-uber
 
 # Partition information
 BOARD_VOLD_MAX_PARTITIONS := 26
+
+BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 0x01400000
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x01400000
